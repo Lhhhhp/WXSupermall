@@ -1,0 +1,2 @@
+<input type="text" placeholder="请输入" bindinput="handleIputtTap"/>
+<view>{{value_af}}</view>

@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/news/news",
+    "pages/cart/cart",
+    "pages/user/user",
+    "pages/input/input",
+    "pages/list/list",
+    "pages/goodsDtl/goodsDtl",
+    "pages/condition/condition",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "购物车作业",
+    "navigationBarTextStyle":"black"
+  },
+
+  "tabBar": {
+    "color": "#9a9a9a",
+    "selectedColor": "#000000",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "iconPath": "image/home.png",
+      "selectedIconPath": "image/homg_hl.png",
+      "text": "首页"
+    },{
+      "pagePath": "pages/news/news",
+      "iconPath": "image/news.png",
+      "selectedIconPath": "image/news_hl.png",
+      "text": "分类"
+    },
+    {
+      "pagePath": "pages/cart/cart",
+      "iconPath": "image/cart.png",
+      "selectedIconPath": "image/cart_hl.png",
+      "text": "购物车"
+    },{
+      "pagePath": "pages/user/user",
+      "iconPath": "image/user_hl.png",
+      "selectedIconPath": "image/user.png",
+      "text": "我的淘宝"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

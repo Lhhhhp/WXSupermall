@@ -1,0 +1,2 @@
+<view wx:if="{{condition}}">true</view>
+<button bindtap="handleButtonTap">点击隐藏</button>

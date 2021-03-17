@@ -1,0 +1,14 @@
+<view class="goods-dtl-cont">
+<swiper autoplay="{{true}}" interval="3000" indicator-dots="{{true}}">
+    <swiper-item wx:for="{{goodsDetail.pic_list}}"  >
+      <image  src="{{item}}" lazy-load />
+    </swiper-item>
+</swiper>
+<view class="info-cont">
+      <view class="goods-name">{{goodsDetail.goods_name}}</view>
+      <view class="price-cont">
+        <view class="price">＄{{goodsDetail.min_price}}</view>
+        <view class="vip-price">＄{{goodsDetail.min_vip_price}}</view>
+      </view>
+</view>
+</view>

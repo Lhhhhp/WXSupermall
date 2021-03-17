@@ -1,0 +1,42 @@
+<swiper autoplay="{{true}}" interval="3000" indicator-dots="{{true}}">
+    <swiper-item wx:for="{{swiperList}}"  >
+      <image  src="{{item.pic_url}}" />
+    </swiper-item>
+</swiper>
+<view class="search-cont">
+  <input type="text" confirm-type="search" placeholder="请输入搜索的商品名称/品牌名称" bindconfirm="handleSearch" />
+  <image src="../../image/search.png" />
+</view>
+<image src="../../image/cloud.png" class="cloud"></image>
+<view class="title-cont">
+  <text class="title">品牌</text>
+</view>
+<view class="brand-list" bindtap="bandleListtap">
+  <view class="brand-li" wx:for="{{brandList}}" wx:key="brand_id">
+    <image src="{{item.pic_url}}" lazy-load></image>
+    <view class="brand-name">{{item.brand_name}}</view>
+  </view>
+</view>
+<view class="goods-cont">
+  <text class="goods-title">商品</text>
+</view>
+<view class="goods-list">
+  <view class="goods-li" wx:for="{{goodsList}}" wx:key="{{item.group_id}}" bindtap="goGoodsDtl" data-id="{{item.spu_id}}">
+    <image lazy-load src="{{item.cover_pic}}" />
+    <view class="info-cont">
+      <view class="goods-name">{{item.goods_name}}</view>
+      <view class="price-cont">
+        <view class="price">＄{{item.min_price}}</view>
+        <view class="vip-price">＄{{item.min_vip_price}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- <swiper  interval="3000"  autoplay="true"  indicator-dots="true">
+  <swiper-item wx:for="{{images}}"  >
+    <view class="wid">
+<image  src="{{item}}" class="a" ></image>
+    </view>
+  </swiper-item>
+</swiper> -->
+

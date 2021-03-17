@@ -1,0 +1,2 @@
+<view>{{count}}</view>
+<view bindtap="handleTap">点击这里加1</view>

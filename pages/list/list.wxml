@@ -1,0 +1,1 @@
+<view wx:for="{{users}}">{{index}}-{{item.name}}-{{item.id}}</view>
